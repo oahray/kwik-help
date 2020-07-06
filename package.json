@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "A service desk application.",
   "main": "dist/app.js",
+  "type": "module",
+  "engines": {
+    "node": ">=14.5.0"
+  },
   "scripts": {
     "start": "tsc && node dist/app.js",
-    "test": "test",
+    "test": "jest",
     "dev": "nodemon",
     "lint": "eslint . --ext .ts"
   },
@@ -28,14 +32,19 @@
     "typescript": "^3.9.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
     "@types/body-parser": "^1.19.0",
     "@types/cors": "^2.8.6",
     "@types/express": "^4.17.6",
+    "@types/jest": "^26.0.3",
     "@types/mongoose": "^5.7.29",
     "@types/node": "^14.0.14",
     "@typescript-eslint/eslint-plugin": "^3.5.0",
     "@typescript-eslint/parser": "^3.5.0",
     "eslint": "^7.4.0",
-    "nodemon": "^2.0.4"
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4",
+    "ts-jest": "^26.1.1"
   }
 }
