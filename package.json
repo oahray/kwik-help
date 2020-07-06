@@ -1,0 +1,37 @@
+{
+  "name": "kwik-help",
+  "version": "1.0.0",
+  "description": "A service desk application.",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "test": "test",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oahray/kwik-help.git"
+  },
+  "author": "Oare Arene",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oahray/kwik-help/issues"
+  },
+  "homepage": "https://github.com/oahray/kwik-help#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.21",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.6",
+    "@types/mongoose": "^5.7.29",
+    "@types/node": "^14.0.14",
+    "nodemon": "^2.0.4"
+  }
+}
