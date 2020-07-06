@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "tsc && node dist/app.js",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "dev": "nodemon",
     "lint": "eslint . --ext .ts",
     "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
