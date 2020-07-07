@@ -2,7 +2,8 @@ import * as express from 'express';
 import * as cors from 'cors';
 import * as bodyParser from 'body-parser';
 
-import Controller from './main.controller';
+import Controller from './controllers/main.controller';
+import DB from './config/mongodb'
 
 class App {
   public app: express.Application;
@@ -10,6 +11,7 @@ class App {
   constructor() {
     this.app = express();
     this.initializeConfig();
+    this.connectDatabase();
     this.initializeController();
   }
 
@@ -21,6 +23,10 @@ class App {
 
     // Enables Cross-origin requests to server
     this.app.use(cors());
+  }
+
+  private connectDatabase() {
+    new DB();
   }
 
   private initializeController() {
