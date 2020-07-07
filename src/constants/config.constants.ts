@@ -1,1 +1,4 @@
-export const PORT = 5000;
+export const {
+  PORT,
+  MONGO_URL
+} = process.env;
