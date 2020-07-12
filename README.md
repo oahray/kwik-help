@@ -41,7 +41,13 @@ This application relies on some data, that cannot be made public, to run. Common
 To run this application locally, create a `.env` file at the root of the project. A sample file named `.sample.env` which includes the necessary configuration environment variables has been created as a guide.
 
 ### Seeding the database
-Use the command `npm run seed`. This would create seed data in your database based on the seed file at `/seeds/users.json`
+Use the command `npm run seed`. This would create seed data in your database based on the seed file at `/seeds/users.json`.
+
+### Running tests
+Unit and integration tests have been included. To run them, run the command `npm test`.
+
+### Linting
+Eslint is the lint of choice for this Typescript project. To check for code-style violations, run the command `npm run lint`.
 
 ### Running the application
 Run `npm start`.
