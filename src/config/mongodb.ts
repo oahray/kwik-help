@@ -9,8 +9,12 @@ class MongoDatabase {
   }
 
   public connect(): void {
-    mongoose.connect(MONGO_URL,  {useNewUrlParser: true}).then((connection) => {
-      console.log("MongoDB database connnection established on", connection.connections[0].name)
+    mongoose.connect(MONGO_URL, {
+      useNewUrlParser: true,
+      useCreateIndex: true,
+      useUnifiedTopology: true
+    }).then(() => {
+      console.log("MongoDB database connnection established");
     }).catch((err) => {
       console.log("Error connecting to database ", err)
     });
