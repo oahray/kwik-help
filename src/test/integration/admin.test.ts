@@ -195,7 +195,6 @@ describe('Admin:', () => {
         .patch(`${API_BASE}/users/${customer._id}/promote`)
         .set('Authorization', `Bearer ${adminToken}`);
 
-        console.log(res.body)
       expect(res.status).toBe(200);
       expect(res.body.object).toBe('user');
       expect(res.body.id).toBe(customer._id.toString());
