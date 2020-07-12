@@ -9,6 +9,8 @@ Kwik Help is a platform that helps organizations manage their customer service.
 ### Dependencies
 This is a NodeJS application with an express server and a Mongo Database. These two dependencies must be installed on your machine before you install the others listed in this project's `package.json`.
 
+**NOTE** that this version was built with Node v.14.5.0 and might not function properly with lower Node versions. A Node Version Manager configuration (`.nvmrc`) has been included at the root of the application. If you have nvm installed, simply run `nvmrc use` to switch to (or install that version).
+
 ### Installing dependencies.
 #### NodeJS
 There are two options you can choose from.
