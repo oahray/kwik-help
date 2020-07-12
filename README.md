@@ -43,6 +43,9 @@ To run this application locally, create a `.env` file at the root of the project
 ### Seeding the database
 Use the command `npm run seed`. This would create seed data in your database based on the seed file at `/seeds/users.json`
 
+### Running the application
+Run `npm start`.
+
 
 ### Features available and base assumptions
 #### Implemented features
