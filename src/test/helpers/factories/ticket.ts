@@ -15,9 +15,7 @@ const ticketBase = (creator: IUser) => ({
 
 const createTicket = async (ticketDetails, creator: IUser): Promise<ITicket> => {
   const ticket = new Ticket(ticketDetails);
-  // await ticket.save();
   creator.tickets.push(ticket);
-  // await creator.save();
 
   return ticket;
 }

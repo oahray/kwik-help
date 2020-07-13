@@ -14,7 +14,6 @@ const userBase = (username: string) => ({
 
 const buildUser = async (userDetails: Record<string, unknown>) => {
   const user = new User(userDetails);
-  // await user.save();
 
   return user;
 }
